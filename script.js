@@ -37,11 +37,17 @@ function formatBytes(bytes) {
 function formatDate(httpDateStr) {
   const d = new Date(httpDateStr);
   if (isNaN(d)) return "—";
-  return d.toLocaleDateString(undefined, {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
+  const timePart = d.toLocaleTimeString(undefined, {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
   });
+  const datePart = d.toLocaleDateString(undefined, {
+    day: "2-digit",
+    month: "long",
+    // year: "numeric",
+  });
+  return `${timePart} ${datePart}`;
 }
 
 async function fetchShareMeta(app, index) {
