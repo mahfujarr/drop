@@ -1,23 +1,6 @@
-const NEXTCLOUD_URL = "https://cloud.mahfujarr.me";
+import { apps } from "./apps-data.js";
 
-const apps = [
-  {
-    name: "Youtube Experimental",
-    tagline: "AD free youtube",
-    version: "21.26.360",
-    color: "linear-gradient(135deg, #2b3dda, #420177)",
-    initial: "Y",
-    shareToken: "youtubeExp",
-  },
-  {
-    name: "Yt-Music Experimental",
-    tagline: "AD free youtube music",
-    version: "9.26.51",
-    color: "linear-gradient(135deg, #ff7b00, #ffd900)",
-    initial: "YtM",
-    shareToken: "ytmusicExp",
-  },
-];
+const NEXTCLOUD_URL = "https://cloud.mahfujarr.me";
 
 const grid = document.getElementById("appsGrid");
 grid.innerHTML = apps
@@ -54,7 +37,11 @@ function formatBytes(bytes) {
 function formatDate(httpDateStr) {
   const d = new Date(httpDateStr);
   if (isNaN(d)) return "—";
-  return d.toLocaleDateString(undefined, { month: "short", year: "numeric" });
+  return d.toLocaleDateString(undefined, {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
 }
 
 async function fetchShareMeta(app, index) {
