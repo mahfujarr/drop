@@ -8,7 +8,7 @@ grid.innerHTML = apps
     (app, i) => `
     <div class="app-card">
       <div class="app-top">
-        <div class="app-icon" style="background:${app.color}">${app.initial}</div>
+        <div class="app-icon${app.icon.trim().startsWith("<svg") ? " app-icon-svg" : ""}"${app.icon.trim().startsWith("<svg") ? "" : ` style="background:${app.color}"`}>${app.icon}</div>
         <div class="app-meta">
           <h3>${app.name}</h3>
           <p>${app.tagline}</p>
