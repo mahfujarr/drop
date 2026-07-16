@@ -140,7 +140,7 @@ async function checkServer() {
     clockVal.textContent = new Date().toLocaleTimeString();
     setStatus(
       false,
-      "Can't reach server (offline or blocked by CORS)",
+      "Server is offline",
       "rgb(148, 8, 8)",
       false,
     );

@@ -2,7 +2,7 @@ export const apps = [
   {
     name: "Youtube Experimental",
     tagline: "AD free youtube",
-    version: "21.26.360",
+    version: "latest",
     color: "linear-gradient(135deg, #2b3dda, #420177)",
     icon: `<svg viewBox="0 0 24 24" fill="#ff3b3b" aria-hidden="true" focusable="false">
       <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12l-6.2 3.5Z" />
@@ -12,7 +12,7 @@ export const apps = [
   {
     name: "Yt-Music Experimental",
     tagline: "AD free youtube music",
-    version: "9.26.51",
+    version: "latest",
     color: "linear-gradient(135deg, #ff7b00, #ffd900)",
     icon: `<svg viewBox="0 0 24 24" fill="#ff7a3d">
             <path
@@ -23,7 +23,7 @@ export const apps = [
   {
     name: "Google Photos",
     tagline: "Google photos unlimited backup",
-    version: "7.80.0.932617251",
+    version: "latest",
     color: "linear-gradient(135deg, #ff7b00, #ffd900)",
     icon: `<svg viewBox="0 0 24 24" fill="#ffcc33">
             <path
